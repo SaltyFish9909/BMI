@@ -34,7 +34,7 @@ namespace ConsoleApplication1
             string height = Console.ReadLine();
            Console.Write("Weight(kg):");
             string weight = Console.ReadLine();
-            double BMI = double.Parse(weight) / (double.Parse(height) * double.Parse(height)*1000);
+            double BMI = double.Parse(weight) / (double.Parse(height) * double.Parse(height)  );
             Console.WriteLine("BMI: " + BMI.ToString());
             
             if (BMI < 18.5)
