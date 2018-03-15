@@ -36,6 +36,19 @@ namespace ConsoleApplication1
             string weight = Console.ReadLine();
             double BMI = double.Parse(weight) / (double.Parse(height) * double.Parse(height)*1000);
             Console.WriteLine("BMI: " + BMI.ToString());
+            
+            if (BMI < 18.5)
+            {
+                Console.WriteLine("體重過輕");
+            }
+            if (BMI <= 18.5 &&  BMI < 24)
+            {
+                Console.WriteLine("正常範圍");
+            }
+            if (BMI > 24)
+            {
+                Console.WriteLine("過重");
+            }
             Console.ReadLine();
         }
     }
