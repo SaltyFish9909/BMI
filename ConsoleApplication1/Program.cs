@@ -30,11 +30,12 @@ namespace ConsoleApplication1
             //Console.WriteLine(total+"元人民币=" + (total / rate) + "元马币");
 
             //
-            Console.Write("Height(cm):");
+            Console.Write("Height(m):");
             string height = Console.ReadLine();
            Console.Write("Weight(kg):");
             string weight = Console.ReadLine();
-            double BMI = double.Parse(weight) / (double.Parse(height) * double.Parse(height)  );
+
+            double BMI = double.Parse(weight) / (double.Parse(height) * double.Parse(height));
             Console.WriteLine("BMI: " + BMI.ToString());
             
             if (BMI < 18.5)
@@ -48,6 +49,14 @@ namespace ConsoleApplication1
             if (BMI > 24)
             {
                 Console.WriteLine("過重");
+            }
+            if (BMI < 16.5)
+            {
+                Console.WriteLine("免役");
+            }
+            if (BMI > 31.5)
+            {
+                Console.WriteLine("免役");
             }
             Console.ReadLine();
         }
